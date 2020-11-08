@@ -1,0 +1,44 @@
+<template name="Home">
+	{{#contentFor "headerButtonLeft"}}
+		<img src='/scotiabank-topnav.png' alt='scotiabank logo' class='header-logo'>
+	{{/contentFor}}
+	{{#contentFor "headerButtonRight"}}
+		<p class='right-section-header'>
+			<a class='header-button' data-ion-modal="messages">
+				<i class='icon ion-email-unread' ></i>
+			</a>
+			<a class='header-button js-action-sheet-settings '>
+				<i class='icon ion-more' ></i>
+			</a>
+		</p>
+	{{/contentFor}}
+	{{#ionView}}
+		{{#ionContent}}
+			<div class='homey'>
+				<div class='pig-details'>
+					{{#with pigDetails}}
+						<span><i class='icon ion-star'></i> <strong>{{level}}</strong></span>
+						<span><i class='icon ion-heart'></i> <strong>{{health}}</strong></span>
+						<span><i class='icon ion-happy'></i><strong> {{happiness}}</strong></span>
+					{{/with}}
+				</div>
+				<div class='week-container'>
+					{{#with weekDetails}}
+						<p>Weekly Goal: {{total}}/{{goal}}</p>
+					{{/with}}
+				</div>
+				<div class="pig-container">
+					{{> pig}}
+				</div>
+				<div class='row'>
+					<button class='col js-respond mutton'  data-category='Food & Shelter'><img src='/nav-meal.png'><br>Food &amp; Shelter</button>
+					<button class='col js-respond mutton'  data-category='Care'><img src='/nav-care.png'><br>Care</button>
+				</div>
+				<div class='row'>
+					<button class='col js-respond mutton'  data-category='Shop'><img src='/nav-shop.png'><br>Shop</button>
+					<button class='col js-respond mutton'  data-category='Love & Play'><img src='/nav-play.png'><br>Love &amp; Play</button>
+				</div>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,33 @@
+<template name='login' >
+	{{#ionView class='login-page'}}
+		{{#ionContent}}
+			<div class='login-section'>
+				<img src='/piggly-intro.png' width='300px'>
+				<div class='row login-form'>
+					<div class='col'>
+						<form id='login'>
+							<label class="item item-input pig-name-input">
+								<input type="text" name="loginEmail" placeholder='Enter Card Number (6 characters)'>
+							</label>
+							<label class="item item-input pig-name-input">
+								<input type="password" name="loginPassword" placeholder='Enter Password (6 characters)'>
+							</label>
+							<input type="submit" class='smaller-button' value="Login">
+						</form>
+					</div>
+					<div class='col'>
+						<form id='register'>
+							<label class="item item-input pig-name-input">
+								<input type="text" name="registerEmail" placeholder='Register Card Number (6 characters)'>
+							</label>
+							<label class="item item-input pig-name-input">
+								<input type="password" name="registerPassword" placeholder='Register Password (6 characters)'>
+							</label>
+							<input type="submit" class='smaller-button' value="Register">
+						</form>
+					</div>
+				</div>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

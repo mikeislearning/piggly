@@ -1,0 +1,131 @@
+<template name='intro'>
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">Let's get started</h1>
+	{{/contentFor}}
+
+	{{#ionView}}
+		{{#ionContent}}
+			{{#ionSlideBox}}
+				{{#ionSlide}}
+					<div class='message-section'>
+						<h1>Hi! I'm your <br>new Piggly!</h1>
+						<p>Please, give me a name</p>
+						<label class="item item-input pig-name-input">
+							<input type="text" name="pig_name" class="js-pig-name-input" placeholder="Name your Piggly!">
+						</label>
+						<button class='smaller-button js-set-name enabled-{{canSubmitName}}'>Submit</button>
+					</div>
+					{{> pig}}
+				{{/ionSlide}}
+
+				{{#ionSlide }}
+					<div class='message-section'>
+						<h3>Check in often to take care of me!</h3>
+						<h4>If you forget, I'll send you an alert. </h4>
+						<div class='pig-notify'>
+							<img src='/piggly_icon.png' width='40px'>
+							<span>{{pigName}}:"I'm hungry!"</span>
+						</div>
+						<button class='smaller-button allow-button js-next-slide'>Allow Alerts </button>
+					</div>
+					{{> pig}}
+				{{/ionSlide}}
+
+				{{#ionSlide }}
+					<div class='message-section'>
+						<h1>Cool!</h1>
+						<h3>Tell us a bit about yourself, so <strong>{{pigName}}</strong> can get to know you better.</h3>
+						<h4>Check all that apply:</h4>
+						{{#ionList class='personal-checklist'}}
+							<div class='row'>
+								<li class="item item-checkbox col">
+									<label class="checkbox">
+										<input type="checkbox" name='user_married' class='js-user-married'>
+									</label>
+									<p>Married</p>
+								</li>
+								<li class="item item-checkbox col">
+									<label class="checkbox">
+										<input type="checkbox" name='user_student'>
+									</label>
+									<p>Student</p>
+								</li>
+							</div>
+							<div class='row'>
+								<li class="item item-checkbox col">
+									<label class="checkbox">
+										<input type="checkbox" name='user_mortgage' class='js-user-mortgage'>
+									</label>
+									<p>Mortgage</p>
+								</li>
+								<li class="item item-checkbox col">
+									<label class="checkbox">
+										<input type="checkbox" name='user_children' class='js-user-children'>
+									</label>
+									<p>Children</p>
+								</li>
+							</div>
+						{{/ionList}}
+						<button class='smaller-button js-next-slide'>Good to go!</button>
+					</div>
+					{{> pig}}
+				{{/ionSlide}}
+
+				{{#ionSlide }}
+					<div class='message-section'>
+						<h3>Great! We're going to be feeding <strong>{{pigName}}</strong> from your <strong>Checking</strong> account</h3>
+						<h4>Here's what we recommend the feed goes into:</h4>
+						<div class='all-ranges'>
+							<div class="list">
+								<div class="item range range-positive">
+									<h2>Credit Card </h2>
+									<input type="range" name="volume" min="0" max="100" value="40">
+									<h3>40%</h3>
+								</div>
+								<div class="item range range-balanced">
+									<h2>Savings</h2>
+									<input type="range" name="volume" min="0" max="100" value="20">
+									<h3>20%</h3>
+								</div>
+								<div class="item range range-royal">
+									<h2>Mortage</h2>
+									<input type="range" name="volume" min="0" max="100" value="20">
+									<h3>20%</h3>
+								</div>
+								<div class="item range range-assertive">
+									<h2>RRSP</h2>
+									<input type="range" name="volume" min="0" max="100" value="20">
+									<h3>20%</h3>
+								</div>
+							</div>
+							<button class='smaller-button js-next-slide'>Looks good!</button>
+							<br>
+							<small>You can always change these details later.</small>
+						</div>
+					</div>
+					{{> pig}}
+				{{/ionSlide}}
+
+				{{#ionSlide }}
+					<div class='message-section'>
+						<h3>I'm kinda hungry now.</h3>
+						<p>I'm going to need some food!</p>
+						<small>This will transfer money from your checking account to your other accounts</small>
+						<div class='row'>
+							<div class='col'>
+								<button class='smaller-button js-first-feed' data-price='5'>Food $5</button>
+							</div>
+							<div class='col'>
+								<button class='smaller-button js-first-feed' data-price='10'>Food $10</button>
+							</div>
+							<div class='col'>
+								<button class='smaller-button js-first-feed' data-price='15'>Food $15</button>
+							</div>
+						</div>
+					</div>
+					{{> pig}}
+				{{/ionSlide}}
+			{{/ionSlideBox}}
+		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,163 @@
+
+// Ionic dependencies
+// @import '/Users/Mactothefuture/Dropbox/Sites/endship/meteor-endship/app/.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+// @import '/Users/Mactothefuture/Dropbox/Sites/endship/meteor-endship/app/.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+@import './ionic/ionic';
+@import './ionicons/ionicons';
+
+@font-face{
+	font-family: 'Wellfleet';
+	src: url ('https://www.google.com/fonts#UsePlace:use/Collection:Wellfleet');
+}
+
+h1,h2,h3,h4,h5,h6,p,li,span,a,button, label, input{
+	font-family: 'Wellfleet', Helvetica, cursive;
+}
+
+.enabled-false{
+	opacity: 0.5;
+	pointer-events: none
+}
+
+.center-section{
+	margin: 30px auto;
+	text-align: center;
+	width: 80%;
+}
+
+.message-section{
+	background-color: #FFF9E9;
+	border: 3px solid #CBB67F;
+	border-radius: 5px;
+	h1,h2, h3,h4,h5 p{
+		color: #643228;
+	}
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	width: 60%;
+}
+
+@media screen and (max-width: 760px) {
+	.message-section{
+		width: 95%;
+	}
+}
+
+.full-width img{
+	width: 100%;
+}
+
+.pig-name-input{
+	margin-bottom: 20px;
+}
+
+.smaller-button{
+	background: #ca7807; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ca7807 0%, #985a05 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ca7807 0%,#985a05 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ca7807 0%,#985a05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca7807', endColorstr='#985a05',GradientType=0 ); /* IE6-9 */
+	border: 0;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+
+// button styles
+.mutton {
+	display: inline-block;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow:    0 8px 0 #AD7A36, 0 15px 20px rgba(0, 0, 0, .35);
+	-moz-box-shadow: 0 8px 0 #AD7A36, 0 15px 20px rgba(0, 0, 0, .35);
+	box-shadow: 0 8px 0 #AD7A36, 0 15px 20px rgba(0, 0, 0, .35);
+	-webkit-transition: -webkit-box-shadow .1s ease-in-out;
+	-moz-transition: -moz-box-shadow .1s ease-in-out;
+	-o-transition: -o-box-shadow .1s ease-in-out;
+	transition: box-shadow .1s ease-in-out;
+	font-size: 30px;
+	color: #643228;
+	margin: 0 20px 50px;
+	img{
+		padding-top: 10px;
+		width: 70px;
+	}
+}
+
+.mutton span {
+	display: inline-block;
+	background-color: #FFF9E9;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	-moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+	font-family: 'Wellfleet', cursive;    line-height: 1;
+	text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+	-webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+	-o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+	transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+	border: 3px solid #CBB67F;
+	width: 300px;
+	height: 194px;
+}
+
+
+.mutton span img{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.mutton.modal{
+	border-radius: 10px;
+	line-height: 50px;
+	left: 0;
+	font-size: 24px;
+}
+
+
+.mutton:hover span {
+	background-color: #ffd80d;
+	text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+.mutton:active, .mutton:focus {
+	-webkit-box-shadow:    0 8px 0 #995906, 0 12px 10px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 8px 0 #995906, 0 12px 10px rgba(0, 0, 0, .3);
+	box-shadow:    0 8px 0 #995906, 0 12px 10px rgba(0, 0, 0, .3);
+
+
+}
+
+.mutton:active span {
+	-webkit-transform: translate(0, 4px);
+	-moz-transform: translate(0, 4px);
+	-o-transform: translate(0, 4px);
+	transform: translate(0, 4px);
+	border: 3px solid #995906;
+}
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:befoeckbox input:checked:before, .checkbox input:checked + .checkbox-icon:before{
+	background-color: brown !important;
+	border-color: brown !important;
+}
+
+div.range{
+	h2{
+		width: 30%;
+	}
+	input{
+		width: 60%;
+	}
+	h3{
+		width: 10%;
+	}
+}

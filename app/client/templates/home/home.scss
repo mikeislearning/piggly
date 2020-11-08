@@ -1,0 +1,71 @@
+/*****************************************************************************/
+/* Home: Style */
+/*****************************************************************************/
+
+.popup-container > .popup{
+	max-width: 90%;
+	width: 450px !important;
+	.button-assertive{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.bar-header{
+	background-color: #e42112 !important;
+	span,p,h1, h2{
+		color: white !important;
+	}
+	.header-button{
+		font-size: 30px;
+		padding: 10px;
+		&:first-of-type{
+			margin-right: 10px;
+		}
+	}
+}
+
+.pig-details{
+	padding: 10px 0 0 10px;
+	i{
+		background-color: white;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		padding-top: 5px;
+		text-align: center;
+		color: red;
+		display: inline-block;
+	}
+	span{
+		padding-right: 5px;
+	}
+}
+
+.right-section-header{
+	position: absolute;
+	right: 5%;
+}
+
+.header-logo{
+	height: 30px;
+	margin-left: 8px;
+}
+
+.homey{
+	background: url('/bg-new.png') no-repeat center 60%;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.week-container{
+	position: absolute;
+	right: 6%;
+	top: 15px;
+}
+
+.pig-container{
+	margin-top: 80px;
+	margin-bottom: 50px;
+}

@@ -1,0 +1,18 @@
+<template name="MasterLayout">
+	{{#ionBody}}
+		{{#if currentUser}}
+			{{#ionNavBar alignTitle="center"}}
+				<h1>Piggly</h1>
+			{{/ionNavBar}}
+			{{#ionNavView}}
+				{{> yield}}
+			{{/ionNavView}}
+			{{else}}
+			{{#ionView}}
+				{{#ionContent}}
+					{{> login}}
+				{{/ionContent}}
+			{{/ionView}}
+		{{/if}}
+	{{/ionBody}}
+</template>

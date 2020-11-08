@@ -1,0 +1,17 @@
+.login-page{
+	background: url('bg-login.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.login-section{
+	margin: 120px auto;
+	text-align: center;
+	width: 80%;
+	.login-form{
+		margin-top: 60px;
+		label{
+			border-radius: 10px;
+			border-color: brown;
+		}
+	}
+}

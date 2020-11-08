@@ -1,0 +1,34 @@
+<template name='balances'>
+	{{#contentFor "headerButtonLeft"}}
+		{{> ionNavBackButton}}
+	{{/contentFor}}
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">Balances</h1>
+	{{/contentFor}}
+	{{#ionView}}
+		{{#ionContent}}
+			<div class='your-info'>
+				{{#with userProfile}}
+					{{#ionList}}
+						{{#ionItem}}
+							<p>Checking account: <strong>${{checking_balance}}</strong></p>
+						{{/ionItem}}
+						{{#ionItem}}
+							<p>Credit account: <strong>${{credit_balance}}</strong></p>
+						{{/ionItem}}
+						{{#ionItem}}
+							<p>Savings account: <strong>${{savings_balance}}</strong></p>
+						{{/ionItem}}
+						{{#ionItem}}
+							<p>RRSP account: <strong>${{rrsp_balance}}</strong></p>
+						{{/ionItem}}
+						{{#ionItem}}
+							<p>Mortage account: <strong>${{mortgage_balance}}</strong></p>
+						{{/ionItem}}
+					{{/ionList}}
+				{{/with}}
+				<img src='/when-pigs-fly.jpg' width='100%'>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>

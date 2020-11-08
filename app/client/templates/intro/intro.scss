@@ -1,0 +1,33 @@
+.ion-slide{
+	background: url('/bg-intro.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.personal-checklist li{
+	border-radius: 10px;
+	margin: 5px;
+	padding: 10px 0;
+	p{
+		margin-left: 35px;
+	}
+}
+
+.pig-notify{
+	width: 250px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	img{
+		position: absolute;
+		width: 40px;
+	}
+	span{
+		left: 50px;
+		position: relative;
+		top: 10px;
+	}
+}
+
+.allow-button{
+	margin-top: 50px;
+}

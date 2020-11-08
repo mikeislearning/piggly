@@ -1,0 +1,38 @@
+<template name='settings'>
+	{{#contentFor "headerButtonLeft"}}
+		{{> ionNavBackButton}}
+	{{/contentFor}}
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">Settings</h1>
+	{{/contentFor}}
+	{{#ionView}}
+		{{#ionContent}}
+			<div class='all-ranges'>
+				<div class="list">
+					<div class="item range range-positive">
+						<h2>Credit Card </h2>
+						<input type="range" name="volume" min="0" max="100" value="40">
+						<h3>40%</h3>
+					</div>
+					<div class="item range range-balanced">
+						<h2>Savings</h2>
+						<input type="range" name="volume" min="0" max="100" value="20">
+						<h3>20%</h3>
+					</div>
+					<div class="item range range-royal">
+						<h2>Mortage</h2>
+						<input type="range" name="volume" min="0" max="100" value="20">
+						<h3>20%</h3>
+					</div>
+					<div class="item range range-assertive">
+						<h2>RRSP</h2>
+						<input type="range" name="volume" min="0" max="100" value="20">
+						<h3>20%</h3>
+					</div>
+
+				</div>
+				<button class='settings-save smaller-button'>Save</button>
+			</div>
+		{{/ionContent}}
+	{{/ionView}}
+</template>
